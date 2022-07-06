@@ -229,7 +229,7 @@ span img{
 @media screen and (max-width:650px) {
     .services-wrapper{
         width: 100%;
-        height: 180vh;
+        height: 145vh;
         padding: 0;
     }
     .page-links{display: none;}

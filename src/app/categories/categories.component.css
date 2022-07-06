@@ -119,7 +119,7 @@ span img{
 @media screen and (max-width:1350px){
     .categories-container{
         width: 100%;
-        height: 120vh;
+        height: 100vh;
         padding: 0;
     }
     .page-links{
@@ -142,7 +142,7 @@ span img{
         align-items: center;
         justify-content: space-evenly;
         /* margin-left: 49px; */
-        padding: 30px;
+        /* padding: 30px; */
     }
     .item{display: none;}
 }
