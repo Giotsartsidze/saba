@@ -142,11 +142,14 @@ span img{
     height: 15px;
 }
 
-@media only screen and (max-width:650px){
+@media only screen and (max-width:375px){
     .homepage-wrapper{
         width: 100%;
-        height: 100vh;
+        height: 165vh;
         padding: 0;
+    }
+    .page-links{
+        display: none;
     }
    .main-container{
     padding: 45px 0;
@@ -156,7 +159,7 @@ span img{
     justify-content: center;
    }
    .left-side{
-    padding-top: 50px;
+    padding: 0 50px;
     margin-bottom: 30px;
    }
    .left-side h1{

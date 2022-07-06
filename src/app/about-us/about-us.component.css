@@ -111,8 +111,11 @@ span img{
 @media screen and (max-width:650px) {
     .aboutus-container{
         width: 100%;
-        height: 100vh;
+        height: 225vh;
         padding: 0;
+    }
+    .page-links{
+        display: none;
     }
     .main-container{
         display: flex;
@@ -138,6 +141,7 @@ span img{
         gap: 16px;
         background: #F3F4F4;
         border-radius: 24px;
+        width: 100%;
     }
 
     .scrolldown{

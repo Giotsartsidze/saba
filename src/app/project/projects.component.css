@@ -136,6 +136,9 @@ span img{
         height: 100vh;
         padding: 0;
     }
+    .page-links{
+        display: none;
+    }
     .arrows{
         display: none;
     }
@@ -147,7 +150,16 @@ span img{
         align-items: center;
         justify-content: space-around;
         /* margin-left: 400px; */
-        margin-top: 100px;
+        /* margin-top: 100px; */
+    }
+    .title h1{
+        font-size: 36px;
+    }
+    .image-container2{
+        display: none;
+    }
+    .image-container3{
+        display: none;
     }
     .item{
         display: flex;
@@ -162,6 +174,6 @@ span img{
     .first-alt{
         display: block;
         height: 100%;
-        padding-left: 775px;
+        
     }
 }
