@@ -1,0 +1,39 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 37px 10px;
+}
+.logo{
+    width: 115px;
+    height: 83px;
+    padding: 0 70px;
+}
+.page-links ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;  
+    
+}
+.page-links ul li a{
+    color: #FFFFFF;
+    text-decoration: none;
+    
+}
+.page-links ul li button{
+    width: 160px;
+    height: 43px;
+    background-color: #FF9370;
+    color: white;
+    border-radius: 67px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: none;
+    cursor: pointer;
+}
+.page-links button img{
+    width: 24px;
+    height: 24px;
+    color: white;
+}
