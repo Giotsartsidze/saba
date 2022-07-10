@@ -13,7 +13,6 @@
 .logo{
     width: 115px;
     height: 83px;
-    /* padding: 0 70px; */
 }
 .page-links ul li{
     display: inline-block;
@@ -56,7 +55,6 @@
     align-items: center;
 }
 .title h1{
-    /* width: 361px; */
     font-size: 78px;
     left: 115px; 
 }
@@ -70,7 +68,6 @@
 .item img{
     width: 375px;
     height: 550px;
-    /* padding: 0 20px; */
     object-fit: cover;
     border-radius: 8px;
     background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
@@ -141,8 +138,6 @@ span img{
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        /* margin-left: 49px; */
-        /* padding: 30px; */
     }
     .item{display: none;}
 }

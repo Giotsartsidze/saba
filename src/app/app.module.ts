@@ -14,6 +14,12 @@ import { CategoriesComponent } from './categories/categories.component';
 import { NextDirective } from './directives/next.directive';
 import { PrecDirective } from './directives/prec.directive';
 import { ProjectsComponent } from './project/projects.component';
+import { ProductsPageComponent } from './products-page/products-page.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { NgxSliderModule } from '@angular-slider/ngx-slider';
+import { FormsModule } from '@angular/forms';
+import { ProductDetailsComponent } from './product-details/product-details.component';
+import { ProjectsNameComponent } from './projects-name/projects-name.component';
 
 @NgModule({
   declarations: [
@@ -27,8 +33,18 @@ import { ProjectsComponent } from './project/projects.component';
     NextDirective,
     PrecDirective,
     ProjectsComponent,
+    ProductsPageComponent,
+    ProductDetailsComponent,
+    ProjectsNameComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, AccordionModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    AccordionModule,
+    MatGridListModule,
+    NgxSliderModule,
+    FormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
