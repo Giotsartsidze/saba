@@ -300,3 +300,28 @@ a:active{
         padding: 40px;
     }
 }
+@media screen and (max-width:450px) {
+    .header{
+        padding: 0;
+    }
+    .left-side{
+        display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 20px;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .search-bar{
+        padding-left: 20px;
+        width: 60%;
+    }
+    .products-main-page{
+        width: 355px;
+        grid-template-columns: 1fr;
+        padding: 40px;
+    }
+}

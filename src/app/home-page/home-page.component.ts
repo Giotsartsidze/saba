@@ -10,6 +10,7 @@ export class HomePageComponent implements OnInit {
 
   ngOnInit(): void {}
   menuList = document.getElementById('menuList');
+  menuVariable : boolean = false;
 
   //   toogleMenu() {
   //     if (this.menuList?.style.maxHeight == '0px') {
@@ -19,4 +20,10 @@ export class HomePageComponent implements OnInit {
   //     }
   //   }
   //
+
+  openMenu(){
+    this.menuVariable != this.menuVariable;
+  }
+
 }
+
