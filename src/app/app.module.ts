@@ -6,14 +6,14 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { HeaderComponent } from './header/header.component';
 
-
 import { ProductsPageComponent } from './products-page/products-page.component';
 import { MatGridListModule } from '@angular/material/grid-list';
-import { NgxSliderModule } from '@angular-slider/ngx-slider';
+
 import { FormsModule } from '@angular/forms';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { ProjectsNameComponent } from './projects-name/projects-name.component';
 import { AccordionModule } from './accordion/accordion.module';
+import { NgxSliderModule } from '@angular-slider/ngx-slider';
 
 @NgModule({
   declarations: [

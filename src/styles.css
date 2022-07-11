@@ -6,6 +6,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Montserrat';
+    font-style: normal;
 }
 .page-wrapper{
     max-width: 1560px;
@@ -13,3 +14,6 @@
     font-family: 'Montserrat'
 }
 
+.active{
+    color: #FF9370;
+}

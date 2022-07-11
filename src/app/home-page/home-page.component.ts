@@ -1,29 +1,20 @@
-import { Component, OnInit } from '@angular/core';
-
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+declare const google: any;
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.css'],
 })
-export class HomePageComponent implements OnInit {
+export class HomePageComponent implements OnInit, AfterViewInit {
   constructor() {}
-
-  ngOnInit(): void {}
-  menuList = document.getElementById('menuList');
-  menuVariable : boolean = false;
-
-  //   toogleMenu() {
-  //     if (this.menuList?.style.maxHeight == '0px') {
-  //       this.menuList.style.maxHeight = '100vh';
-  //     } else {
-  //       this.menuList?.style.maxHeight = '0px' ;
-  //     }
-  //   }
-  //
-
-  openMenu(){
-    this.menuVariable != this.menuVariable;
+  ngAfterViewInit(): void {
+    this.map = new google.maps.Map(this.mapElement.nativeElement, {
+      center: { lat: 41.7151, lng: 44.8271 },
+      zoom: 14,
+    });
   }
 
+  ngOnInit(): void {}
+  map: any;
+  @ViewChild('mapElement') mapElement: any;
 }
-

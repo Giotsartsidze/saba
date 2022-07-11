@@ -1,7 +1,12 @@
+header{
+    position: relative;
+}
 .navbar{
     display: flex;
+    
     justify-content: space-between;
     align-items: center;
+    top: 0%;
     padding: 37px 10px;
 }
 .logo{
@@ -16,9 +21,10 @@
     
 }
 .page-links ul li a{
-    color: #FFFFFF;
+    color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
-    
+    font-size: 18px;
+    line-height: 150%;
 }
 .page-links ul li button{
     width: 160px;
@@ -36,4 +42,22 @@
     width: 24px;
     height: 24px;
     color: white;
+}
+.header_change{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+}
+.header_change .page-links ul li a{
+    color: #171824;
+    text-decoration: none;
+    transition: 2.5s;
+    
+}
+
+::ng-deep
+.mat-typography h3{
+    margin: 0;
 }
