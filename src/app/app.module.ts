@@ -14,6 +14,10 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { ProjectsNameComponent } from './projects-name/projects-name.component';
 import { AccordionModule } from './accordion/accordion.module';
 import { NgxSliderModule } from '@angular-slider/ngx-slider';
+import { NextDirective } from './next.directive';
+import { PrevDirective } from './prev.directive';
+import { NextCategoriDirective } from './next-categori.directive';
+import { PrevtCategoriDirective } from './prevt-categori.directive';
 
 @NgModule({
   declarations: [
@@ -23,6 +27,10 @@ import { NgxSliderModule } from '@angular-slider/ngx-slider';
     ProductsPageComponent,
     ProductDetailsComponent,
     ProjectsNameComponent,
+    NextDirective,
+    PrevDirective,
+    NextCategoriDirective,
+    PrevtCategoriDirective,
   ],
   imports: [
     BrowserModule,
