@@ -17,3 +17,9 @@
 .active{
     color: #FF9370;
 }
+
+@media screen and(max-width:450px)  {
+    body{
+        padding: 0 30px;
+    }
+}

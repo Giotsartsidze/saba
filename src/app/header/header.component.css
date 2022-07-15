@@ -57,7 +57,28 @@ header{
     
 }
 
+i{
+    display: none;
+}
+
 ::ng-deep
 .mat-typography h3{
     margin: 0;
+}
+
+
+    @media screen and(max-width : 450px) {
+
+        .page-links{
+            display: flex;
+            align-items: center;
+            display: none;
+        }
+}
+
+
+@media screen and (max-width:450px) {
+    .navbar{
+        display: none;
+    }
 }
