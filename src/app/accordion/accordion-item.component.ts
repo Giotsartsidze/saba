@@ -37,6 +37,8 @@ import { Component, Input, OnInit } from '@angular/core';
     ]),
   ],
 })
+
+
 export class AccordionItemComponent implements OnInit {
   @Input() title: string | undefined;
   showBody = false;
@@ -48,4 +50,6 @@ export class AccordionItemComponent implements OnInit {
   toogle() {
     this.showBody = !this.showBody;
   }
+
+  
 }

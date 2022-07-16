@@ -3,17 +3,15 @@
         <div class="logo">
             <img src="../assets/logo.png" alt="Logo">
         </div>
-        <div class="menu-logo" (click)="toogleMenu()">
-            <i> {{isMenuOpen ? "close" : "menu"}}<img class="menu-icon" src="../assets/mobilenav.png" id="menuList"></i>
-        </div>
-        <div class="page-links" [class.is-open]="isMenuOpen">
+        
+        <div class="page-links" >
             <ul>
                 <li routerLinkActive="active" [routerLinkActiveOptions]="{exact : true}"><a href="">Home</a></li>
-                <li routerLinkActive="active"><a href="">Projects</a></li>
+                <li routerLinkActive="active"><a href="#projects">Projects</a></li>
                 <li routerLinkActive="active"><a href="" routerLink="productsPage">Products</a></li>
-                <li routerLinkActive="active"><a href="">Special Offers</a></li>
-                <li routerLinkActive="active"><a href="">About</a></li>
-                <li><button class="contact"><img src="../assets/message.png" alt=""> <h3>Contact Us</h3></button></li>
+                <li routerLinkActive="active"><a href="#categories">Special Offers</a></li>
+                <li routerLinkActive="active"><a href="#about">About</a></li>
+                <li><a href="#contact"><button class="contact"><img src="../assets/message.png" alt=""> <h3>Contact Us</h3></button></a></li>
             </ul>
         </div>
     </div>

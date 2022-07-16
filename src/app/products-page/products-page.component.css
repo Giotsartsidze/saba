@@ -94,7 +94,7 @@ p{
 }
 .categories{
     width: 376px;
-    height: 700px;
+   
     background: #F3F4F4;
     border-radius: 8px;
 }
@@ -302,8 +302,24 @@ a:active{
     }
 }
 @media screen and (max-width:450px) {
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        top: 0%;
+        padding: 37px 10px;
+    }
     .header{
         padding: 0;
+    }
+
+    .logo{
+        padding: 0;
+    }
+    .page-links ul li{
+        display: flex;
+    flex-direction: row-reverse;
     }
     .left-side{
         display: flex;

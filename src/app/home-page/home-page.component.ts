@@ -17,4 +17,13 @@ export class HomePageComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {}
   map: any;
   @ViewChild('mapElement') mapElement: any;
+
+  panelOpenState = false;
+  step = 0;
+
+  setStep(index: number) {
+    this.step = index;
+  }
+
 }
+

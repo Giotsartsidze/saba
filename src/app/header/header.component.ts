@@ -10,7 +10,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {}
   header_var = false;
-  isMenuOpen = false;
+  
 
   @HostListener('window:scroll')
   scrollFunction() {
@@ -21,7 +21,5 @@ export class HeaderComponent implements OnInit {
     }
   }
 
-  toogleMenu():void{
-    this.isMenuOpen = !this.isMenuOpen;
-  }
+  
 }

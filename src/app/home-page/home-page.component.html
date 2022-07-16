@@ -14,13 +14,6 @@
                     <img class="pc-image" src="../assets/Rectangle 7.png" alt="">
                     <img  class="mob-image" src="../assets/RectangleMob.png" alt="">
                 </div>
-                <!-- <div class="order-btn">
-                    <button>
-                        <p>+</p>
-                        <p>Order Now</p>
-                        <p>$799.00</p>
-                    </button>
-                </div> -->
             </div>
         </div>
         <div class="scrolldown-main">
@@ -76,7 +69,7 @@
 </section>
 
 
-<section>
+<section id="projects">
     <div class="projects-container">
         <div class="categories-con">
             <div class="title">
@@ -88,7 +81,7 @@
                     <div class="item">
                         <img class="first" src="../assets/Rectangle 31.png" alt="">
                         <span><a href=""  routerLink="projectsName">Project Name</a></span>
-                        <img class="first-alt" src="../assets/viwro.png" alt="">
+                        <!-- <img class="first-alt" src="../assets/viwro.png" alt=""> -->
     
                     </div>
                 <div class="image-container2">
@@ -133,12 +126,12 @@
     
 </section>
 
-<section>
+<section id="about">
     <div class="aboutus-container">
        
         <div class="main-container">
             
-                <div class="left">
+                <div class="left ">
                     <h1>About Us</h1>
                     <p>It is well known that proper conditions at the workplace promote <br>
                         creation, development and expansion. Products and services that <br>
@@ -154,54 +147,82 @@
                             Pros (former TECHO GEORGIA).</p>
                 </div>
                 <div class="right">
-                    <app-accordion><app-accordion-item title="Quality">
-                        <p>International certificates and total quality management approach <br>
-                            guarantee the highest quality of our products. All of our products <br>
-                            meet EU standards for ergonomics, hygienic norms, non-toxity and chain <br>
-                            of production. Acoustic panels, silent closing systems, anti-static flooring, <br>
-                            high gloss and anti-bacterial surfaces are among the commercial interior <br>
-                            solutions offered to our customers.</p>
-                    </app-accordion-item></app-accordion>
-                    <app-accordion><app-accordion-item title="Project Security">
-                        <p>International certificates and total quality management approach <br>
-                            guarantee the highest quality of our products. All of our products <br>
-                            meet EU standards for ergonomics, hygienic norms, non-toxity and chain <br>
-                            of production. Acoustic panels, silent closing systems, anti-static flooring, <br>
-                            high gloss and anti-bacterial surfaces are among the commercial interior <br>
-                            solutions offered to our customers.</p>
-                    </app-accordion-item></app-accordion>
-                    <app-accordion><app-accordion-item title="Full service">
-                        <p>International certificates and total quality management approach <br>
-                            guarantee the highest quality of our products. All of our products <br>
-                            meet EU standards for ergonomics, hygienic norms, non-toxity and chain <br>
-                            of production. Acoustic panels, silent closing systems, anti-static flooring, <br>
-                            high gloss and anti-bacterial surfaces are among the commercial interior <br>
-                            solutions offered to our customers.</p>
-                    </app-accordion-item></app-accordion>
-                    <app-accordion><app-accordion-item title="Flexibility of product range">
-                        <p>International certificates and total quality management approach <br>
-                            guarantee the highest quality of our products. All of our products <br>
-                            meet EU standards for ergonomics, hygienic norms, non-toxity and chain <br>
-                            of production. Acoustic panels, silent closing systems, anti-static flooring, <br>
-                            high gloss and anti-bacterial surfaces are among the commercial interior <br>
-                            solutions offered to our customers.</p>
-                    </app-accordion-item></app-accordion>
-                    <app-accordion><app-accordion-item title="Design">
-                        <p>International certificates and total quality management approach <br>
-                            guarantee the highest quality of our products. All of our products <br>
-                            meet EU standards for ergonomics, hygienic norms, non-toxity and chain <br>
-                            of production. Acoustic panels, silent closing systems, anti-static flooring, <br>
-                            high gloss and anti-bacterial surfaces are among the commercial interior <br>
-                            solutions offered to our customers.</p>
-                    </app-accordion-item></app-accordion>
-                    <app-accordion><app-accordion-item title="Service and warranty">
-                        <p>International certificates and total quality management approach <br>
-                            guarantee the highest quality of our products. All of our products <br>
-                            meet EU standards for ergonomics, hygienic norms, non-toxity and chain <br>
-                            of production. Acoustic panels, silent closing systems, anti-static flooring, <br>
-                            high gloss and anti-bacterial surfaces are among the commercial interior <br>
-                            solutions offered to our customers.</p>
-                    </app-accordion-item></app-accordion>
+                    <mat-accordion style="background-color: transparent; color: black;">
+                        <mat-expansion-panel  [expanded]="step === 0" (opened)="setStep(0)" hideToggle style="background-color: transparent; box-shadow: none;" >
+                          <mat-expansion-panel-header >
+                            <mat-panel-title>
+                              Quality
+                            </mat-panel-title>
+                          </mat-expansion-panel-header>
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est inventore at quo, ad distinctio commodi provident nihil alias, labore quia nisi voluptate vel dolore non doloribus libero praesentium laudantium aliquid!</p>
+                        </mat-expansion-panel>
+
+
+                        <mat-expansion-panel style="background-color: transparent; box-shadow: none;" (opened)="panelOpenState = true"
+                                             (closed)="panelOpenState = false">
+                          <mat-expansion-panel-header>
+                            <mat-panel-title>
+                              Project Security
+                            </mat-panel-title>
+                            <mat-panel-description>
+                            </mat-panel-description>
+                          </mat-expansion-panel-header>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia nihil facere at ipsum possimus harum quasi? Sit quaerat eaque deserunt. Nihil autem ad quia dolorum commodi. Excepturi odio obcaecati officia.</p>
+                        </mat-expansion-panel>
+                        <mat-expansion-panel style="background-color: transparent; box-shadow: none;" (opened)="panelOpenState = true"
+                                             (closed)="panelOpenState = false">
+                          <mat-expansion-panel-header>
+                            <mat-panel-title>
+                              Full service
+                            </mat-panel-title>
+                            <mat-panel-description>
+                            </mat-panel-description>
+                          </mat-expansion-panel-header>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia nihil facere at ipsum possimus harum quasi? Sit quaerat eaque deserunt. Nihil autem ad quia dolorum commodi. Excepturi odio obcaecati officia.</p>
+                        </mat-expansion-panel>
+
+
+
+                        <mat-expansion-panel style="background-color: transparent; box-shadow: none;" (opened)="panelOpenState = true"
+                                             (closed)="panelOpenState = false">
+                          <mat-expansion-panel-header>
+                            <mat-panel-title>
+                             Flexibility of Product range
+                            </mat-panel-title>
+                            <mat-panel-description>
+                            </mat-panel-description>
+                          </mat-expansion-panel-header>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia nihil facere at ipsum possimus harum quasi? Sit quaerat eaque deserunt. Nihil autem ad quia dolorum commodi. Excepturi odio obcaecati officia.</p>
+                        </mat-expansion-panel>
+
+
+                        <mat-expansion-panel style="background-color: transparent; box-shadow: none;" (opened)="panelOpenState = true"
+                                             (closed)="panelOpenState = false">
+                          <mat-expansion-panel-header>
+
+                            <mat-panel-title>
+                              Design
+                            </mat-panel-title>
+                            <mat-panel-description>
+                            </mat-panel-description>
+                          </mat-expansion-panel-header>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia nihil facere at ipsum possimus harum quasi? Sit quaerat eaque deserunt. Nihil autem ad quia dolorum commodi. Excepturi odio obcaecati officia.</p>
+                        </mat-expansion-panel>
+
+
+                        <mat-expansion-panel style="background-color: transparent; box-shadow: none;" (opened)="panelOpenState = true"
+                                             (closed)="panelOpenState = false">
+                          <mat-expansion-panel-header>
+
+                            <mat-panel-title>
+                              Service and Warranty
+                            </mat-panel-title>
+                            <mat-panel-description>
+                            </mat-panel-description>
+                          </mat-expansion-panel-header>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia nihil facere at ipsum possimus harum quasi? Sit quaerat eaque deserunt. Nihil autem ad quia dolorum commodi. Excepturi odio obcaecati officia.</p>
+                        </mat-expansion-panel>
+                      </mat-accordion>
             </div>
         </div>
         <div class="scrolldown">
@@ -212,7 +233,7 @@
     
 </section>
 
-<section>
+<section id="categories">
     <div class="categories-container">
         
     
@@ -297,7 +318,7 @@
     
 </section>
 
-<section>
+<section id="contact">
     <div class="contactus-container">
         
         <div class="main-container">

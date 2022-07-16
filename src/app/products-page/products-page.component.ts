@@ -14,6 +14,14 @@ export class ProductsPageComponent implements OnInit {
     floor: 0,
     ceil: 1200,
   };
+
+  panelOpenState = false;
+  step = 0;
+
+  setStep(index: number) {
+    this.step = index;
+  }
+
   constructor() {}
 
   ngOnInit(): void {}

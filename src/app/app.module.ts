@@ -18,7 +18,9 @@ import { NextDirective } from './next.directive';
 import { PrevDirective } from './prev.directive';
 import { NextCategoriDirective } from './next-categori.directive';
 import { PrevtCategoriDirective } from './prevt-categori.directive';
-
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatIconModule} from '@angular/material/icon';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,6 +41,10 @@ import { PrevtCategoriDirective } from './prevt-categori.directive';
     MatGridListModule,
     NgxSliderModule,
     FormsModule,
+    MatFormFieldModule,
+    MatExpansionModule,
+    MatIconModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent],
