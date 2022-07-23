@@ -1,5 +1,6 @@
 import { Options } from '@angular-slider/ngx-slider';
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-products-page',
@@ -7,6 +8,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./products-page.component.css'],
 })
 export class ProductsPageComponent implements OnInit {
+  toppings = this._formBuilder.group({
+    Florring: false,
+    OfficeSeating: false,
+    OfficeFurniture: false,
+    SoftSeating: false,
+    Lightning: false,
+  });
+
+
+  constructor(private _formBuilder: FormBuilder) {}
+
   value: number = 200;
   highValue: number = 990;
 
@@ -22,7 +34,10 @@ export class ProductsPageComponent implements OnInit {
     this.step = index;
   }
 
-  constructor() {}
+  
+
+  
+
 
   ngOnInit(): void {}
 }

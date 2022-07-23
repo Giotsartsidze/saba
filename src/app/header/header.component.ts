@@ -21,5 +21,20 @@ export class HeaderComponent implements OnInit {
     }
   }
 
+  goHome(){
+    document.getElementById("home").scrollIntoView({behavior:"smooth"})
+  }
+  goProjects(){
+    document.getElementById("projects").scrollIntoView({behavior:"smooth"})
+  }
+  goCategories(){
+    document.getElementById("categories").scrollIntoView({behavior:"smooth"})
+  }
+  goAbout(){
+    document.getElementById("about").scrollIntoView({behavior:"smooth"})
+  }
+  goContact(){
+    document.getElementById("contact").scrollIntoView({behavior:"smooth"})
+  }
   
 }

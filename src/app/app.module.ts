@@ -9,7 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { ProductsPageComponent } from './products-page/products-page.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 
-import { FormsModule } from '@angular/forms';
+import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { ProjectsNameComponent } from './projects-name/projects-name.component';
 import { AccordionModule } from './accordion/accordion.module';
@@ -21,6 +21,8 @@ import { PrevtCategoriDirective } from './prevt-categori.directive';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +35,7 @@ import { MatIconModule } from '@angular/material/icon';
     PrevDirective,
     NextCategoriDirective,
     PrevtCategoriDirective,
+
   ],
   imports: [
     BrowserModule,
@@ -44,6 +47,9 @@ import { MatIconModule } from '@angular/material/icon';
     MatFormFieldModule,
     MatExpansionModule,
     MatIconModule,
+    ReactiveFormsModule,
+    MatCheckboxModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent],

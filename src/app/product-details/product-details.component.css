@@ -6,7 +6,17 @@
     padding: 50px 115px;
 }
 .title h2{
-    font-size: 36px;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 44px;
+/* identical to box height */
+
+
+/* Black */
+
+color: #171824;
 }
 
 .main-page{
@@ -21,24 +31,43 @@
     gap: 30px;
 }
 .left-side h1{
-    font-size: 48px;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 59px;
+/* identical to box height */
+
+
+color: #171824;
 }
 
 .left-side p{
-    font-size: 20px;
-    color: #171824;
     font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 150%;
+/* or 30px */
+
+
+color: rgba(23, 24, 36, 0.5);
 }
 .left-side .btn-price{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
+    gap: 20px;
 }
 .left-side .btn-price span{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
     font-size: 36px;
+    line-height: 44px;
+    /* identical to box height */
+    
+    
     color: #FF9370;
 }
 

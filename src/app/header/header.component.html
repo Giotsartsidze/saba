@@ -6,12 +6,12 @@
         
         <div class="page-links" >
             <ul>
-                <li routerLinkActive="active" [routerLinkActiveOptions]="{exact : true}"><a href="">Home</a></li>
-                <li routerLinkActive="active"><a href="#projects">Projects</a></li>
-                <li routerLinkActive="active"><a href="" routerLink="productsPage">Products</a></li>
-                <li routerLinkActive="active"><a href="#categories">Special Offers</a></li>
-                <li routerLinkActive="active"><a href="#about">About</a></li>
-                <li><a href="#contact"><button class="contact"><img src="../assets/message.svg" alt=""> <h3>Contact Us</h3></button></a></li>
+                <li routerLinkActive="active" [routerLinkActiveOptions]="{exact : true}"><a  (click)="goHome()">Home</a></li>
+                <li routerLinkActive="active"><a  (click)="goProjects()">Projects</a></li>
+                <li routerLinkActive="active"><a  routerLink="productsPage">Products</a></li>
+                <li routerLinkActive="active"><a  (click)="goCategories()">Special Offers</a></li>
+                <li routerLinkActive="active"><a  (click)="goAbout()">About</a></li>
+                <li><a  (click)="goContact()"><button class="contact"><img src="../assets/message.svg" alt=""> <h3>Contact Us</h3></button></a></li>
             </ul>
         </div>
     </div>

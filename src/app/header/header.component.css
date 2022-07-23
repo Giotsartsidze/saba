@@ -25,10 +25,11 @@ header{
     color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
     font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 150%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    cursor: pointer;
 }
 .page-links ul li button{
     width: 160px;
@@ -70,6 +71,8 @@ i{
 .mat-typography h3{
     margin: 0;
 }
+
+
 
 @media screen and (max-width:450px) {
     .navbar{
