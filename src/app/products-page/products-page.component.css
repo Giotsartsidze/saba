@@ -174,12 +174,6 @@ p{
     position: sticky;
 }
 
-app-accordion-item:hover{
-    color: #FF9370;
-}
-app-accordion-item p{
-    color: #171824;
-}
 .search-bar{
     position: relative;
     display: flex;
@@ -201,15 +195,19 @@ app-accordion-item p{
     padding-left: 40px;
 }
 .search-bar button{
-    color: #FFBBA5;
     position: relative;
     cursor: pointer;
     padding: 16px 41px;
     gap: 30px;
-
+    border: none;
     width: 139px;
     height: 56px;
-
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FF9370;
     background: rgba(255, 147, 112, 0.2);   
     border-radius: 53px;
 }

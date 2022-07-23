@@ -10,8 +10,10 @@
 }
 .page-wrapper{
     max-width: 1560px;
+    min-width: 320px;
     margin: auto;
     font-family: 'Montserrat'
+    
 }
 
 .active{

@@ -2,7 +2,7 @@
 
 .homepage-wrapper{
     width: 100%;
-    height: 120vh;
+    height: 80vh;
     padding: 0 70px;
 }
 section{
@@ -35,12 +35,19 @@ section{
 }
 .left-side h1{
     color: #FF9370;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
     font-size: 96px;
     margin: 24px auto;
 }
 .left-side p{
     color: #171824;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
     font-size: 20px;
+    line-height: 150%;
     margin: 24px auto;
 }
 .left-side button{
@@ -52,6 +59,11 @@ section{
     border-radius: 32px;
     cursor: pointer;
     color: #fff;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
 }
 .touch{
     display: none;
@@ -71,27 +83,12 @@ section{
     height: 80vh;
 }
 
-.scrolldown-main{
-    display: block;
-    padding-top: 300px;
-}
 
-span{
-    font-size: 16px;
-    color: rgba(23, 24, 36, 0.7);
-    display: flex;
-    width: 130px;
-    height: 24px;
-}
-span img{
-    width: 15px;
-    height: 15px;
-}
 
 @media only screen and (max-width:450px){
     .homepage-wrapper{
         width: 100%;
-        height: 100%;
+        height: 135vh;
         padding: 0;
     }
     
@@ -107,7 +104,12 @@ span img{
    }
    .left-side h1{
     color: black;
-    font-size: 40px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    margin: 0;
    }
    .left-side p{
     font-size: 26px;
@@ -156,11 +158,6 @@ span img{
        font-size: 30px;
        
    }
-
-   .scrolldown{
-    display: none;
-   }
-
 }
 
 
@@ -168,23 +165,37 @@ span img{
 
 .services-wrapper{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     padding: 0 70px;
 }
 .services{
-    position: absolute;
+    /* position: absolute;
     width: 469px;
-    height: 162px;
+    height: 162px; */
     left: 115px;
 }
+.main-contant{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .services h1{
-    font-size: 86px;
+    
     margin: 24px auto;
     color: #171824;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
 }
 .services p{
     color: #171824;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
     font-size: 20px;
+    line-height: 150%;
 }
 
 
@@ -201,7 +212,7 @@ span img{
     justify-content: flex-end;
     align-items: center;
     margin: 20px 0;
-    gap: 35px;
+    gap: 20px;
     width: 100%;
     height: 100%
 }
@@ -210,7 +221,7 @@ span img{
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    gap: 35px;
+    gap: 20px;
     width: 100%;
     height: 100%
 }
@@ -218,6 +229,7 @@ span img{
 .furniture{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
     padding: 48px;
     gap: 24px;
@@ -227,7 +239,10 @@ span img{
     border-radius: 24px;
 }
 .furniture h4{
-    font-size: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
     line-height: 150%;
     color: #171824;
 }
@@ -238,6 +253,7 @@ span img{
 .custum-made{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
     padding: 48px;
     gap: 24px;
@@ -247,7 +263,10 @@ span img{
     border-radius: 24px;
 }
 .custum-made h4{
-    font-size: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
     line-height: 150%;
     color: #171824;
 }
@@ -258,6 +277,7 @@ span img{
 .office-space{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
     padding: 48px;
     gap: 24px;
@@ -267,7 +287,10 @@ span img{
     border-radius: 24px;
 }
 .office-space h4{
-    font-size: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
     line-height: 150%;
     color: #171824;
 }
@@ -278,6 +301,7 @@ span img{
 .grapical   {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
     padding: 48px;
     gap: 24px;
@@ -287,7 +311,10 @@ span img{
     border-radius: 24px;
 }
 .grapical    h4{
-    font-size: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
     line-height: 150%;
     color: #171824;
 }
@@ -298,6 +325,7 @@ span img{
 .office-carpets   {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
     padding: 48px;
     gap: 4px;
@@ -307,7 +335,10 @@ span img{
     border-radius: 24px;
 }
 .office-carpets    h4{
-    font-size: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
     line-height: 150%;
     color: #171824;
 }
@@ -316,28 +347,15 @@ span img{
 }
 
 
-.scrolldown{
-   display: block;
-   padding-top: 100px;
-}
-span{
-    font-size: 16px;
-    color: rgba(23, 24, 36, 0.7);
-    display: flex;
-    width: 130px;
-    height: 24px;
-    
-}
-span img{
-    width: 15px;
-    height: 15px;
-}
-
 @media screen and (max-width:450px) {
     .services-wrapper{
         width: 100%;
         height: 105vh;
         padding: 0;
+    }
+    .main-contant{
+        display: flex;
+        flex-direction: column;
     }
    
     .services{
@@ -354,9 +372,7 @@ span img{
     .services p{
         font-size: 20px;
     }
-    .services-contant{
-        margin-top: 200px;
-    }
+    
     .box-divs h4{
         font-size: 14px;
     }
@@ -430,9 +446,7 @@ span img{
         background: rgba(23, 24, 36, 0.05);
         border-radius: 24px;
     }
-    .scrolldown{
-        display: none;
-    }
+
     .service.contant{
         display: flex;
         flex-direction: column;
@@ -465,7 +479,12 @@ span img{
 .title h1{
     margin-top: 35px;
     font-size: 75px;
-    left: 115px; 
+    left: 115px;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 78px;
 }
 
 
@@ -490,7 +509,11 @@ span img{
 .image-container1 span a{
     margin-top: -40px;
     color: #fff;
-    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+line-height: 150%;
     text-decoration: none;
     font-size: 20px;
     padding-left: 20px;
@@ -533,10 +556,6 @@ span img{
     cursor: pointer;
 }
 
-
-.scrolldown{
-    display: block;
-}
 span{
     font-size: 16px;
     color: rgba(23, 24, 36, 0.7);
@@ -568,9 +587,6 @@ span img{
     }
     .arrows{
         display: hidden;
-    }
-    .scrolldown{
-        display: none;
     }
     
     .title h1{
@@ -634,7 +650,7 @@ span img{
 
 .aboutus-container{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     padding: 0 70px;
 }
 
@@ -651,14 +667,21 @@ span img{
 }
 .left h1{
     color: #171824;
-    font-size: 64px;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 78px;
     margin: 24px auto;
 }
 .left p{
-    color: #171824;
-    font-size: 20px;
+    color: rgba(23, 24, 36, 0.5);
     margin: 24px auto;
-    line-height: 30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
 }
 
 .right{
@@ -671,35 +694,33 @@ span img{
     background: #F3F4F4;
     border-radius: 24px;
     width: 833px;
-    height: 600px;
+    /* height: 600px; */
 }
-
-
-app-accordion-item:hover{
-    color: #FF9370;
-}
-app-accordion-item p{
-    color: #171824;
-}
-
-
-
-.scrolldown{
-    display: block;
-    padding-top: 150px;
-}
-span{
-    font-size: 16px;
-    color: rgba(23, 24, 36, 0.7);
+::ng-deep
+.mat-expansion-panel-header-title, .mat-expansion-panel-header-description {
     display: flex;
-    width: 130px;
-    height: 24px;
-    
+    flex-grow: 1;
+    margin-right: 16px;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    color: #171824;
+    /* line-height: 150%; */
 }
-span img{
-    width: 15px;
-    height: 15px;
+
+::ng-deep
+.mat-typography p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    color: rgba(23, 24, 36, 0.5);
 }
+
+
 
 
 
@@ -750,12 +771,9 @@ span img{
         background: #F3F4F4;
         border-radius: 24px;
         width: 400px;
-        height: 690px;
+       
     }
 
-    .scrolldown{
-        display: none;
-    }
 }
 
 
@@ -841,6 +859,13 @@ span img{
     font-size: 20px;
     color: #F3F4F4;
 }
+
+.row-1 p{
+    color: #F3F4F4;
+}
+.row-2 p{
+    color: white;
+}
 .cont{
     display: flex;
     flex-direction: column-reverse;
@@ -879,28 +904,6 @@ span img{
 }
 
 
-
-
-
-.scrolldown{
-    display: block;
-    left: 64px;
-    padding: 50px 0;
-    
-}
-span{
-    font-size: 16px;
-    color: rgba(23, 24, 36, 0.7);
-    display: flex;
-    width: 130px;
-    height: 24px;
-    
-}
-span img{
-    width: 15px;
-    height: 15px;
-}
-
 @media screen and (max-width:450px){
     .categories-container{
         width: 100%;
@@ -919,7 +922,6 @@ span img{
         padding-top: 20px;
     }
 
-    .scrolldown{display: none;}
 
     .item1{
         align-items: center;
@@ -953,7 +955,11 @@ span img{
 }
 .left1 h1{
     color: #171824;
-    font-size: 64px;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 78px;
     margin: 24px auto;
 }
 .info-container{
@@ -976,11 +982,19 @@ hr{
     justify-content: flex-start
 }
 .left1 p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
     font-size: 20px;
+    line-height: 150%;
 }
 .left1 span{
-   
-    padding: 20px 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    /* line-height: 150%; */
+    width: 100%;
 }
 .social-logos img{
     padding: 10px;
@@ -989,7 +1003,7 @@ hr{
 
 .map{
     width: 940px;
-    height: 560px;
+    height: 595px;
     border-radius: 10px;
 }
 
@@ -1015,7 +1029,7 @@ hr{
     }
     .map{
         width: 642px;
-        height: 560px;
+        height: 595px;
         border-radius: 24px;
         object-fit: cover;
     }
@@ -1057,10 +1071,15 @@ hr{
     }
     
     .map{
-        width: 400px;
+        width: 420px;
         height: 560px;
         border-radius: 24px;
         object-fit: cover;
+    }
+    .span-container{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
     }
     
     .scrolldown-end{display: none;}
@@ -1073,3 +1092,8 @@ hr{
     }
 }
 
+@media only screen and(max-width:450px) {
+    .page-wrapper{
+        width: 445px;
+    }
+}

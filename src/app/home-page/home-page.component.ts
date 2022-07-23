@@ -24,6 +24,4 @@ export class HomePageComponent implements OnInit, AfterViewInit {
   setStep(index: number) {
     this.step = index;
   }
-
 }
-

@@ -39,74 +39,15 @@
         </div>
         <div class="categories">
             <h4>Categories</h4>
-            <mat-accordion style="background-color: transparent; color: black;">
-                <mat-expansion-panel  [expanded]="step === 0" (opened)="setStep(0)" hideToggle style="background-color: transparent; box-shadow: none;" >
-                  <mat-expansion-panel-header >
-                    <mat-panel-title>
-                      Flooring
-                    </mat-panel-title>
-                  </mat-expansion-panel-header>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est inventore at quo, ad distinctio commodi provident nihil alias, labore quia nisi voluptate vel dolore non doloribus libero praesentium laudantium aliquid!</p>
-                </mat-expansion-panel>
-
-
-                <mat-expansion-panel style="background-color: transparent; box-shadow: none;" (opened)="panelOpenState = true"
-                                     (closed)="panelOpenState = false">
-                  <mat-expansion-panel-header>
-                    <mat-panel-title>
-                      Office Seating
-                    </mat-panel-title>
-                    <mat-panel-description>
-                    </mat-panel-description>
-                  </mat-expansion-panel-header>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia nihil facere at ipsum possimus harum quasi? Sit quaerat eaque deserunt. Nihil autem ad quia dolorum commodi. Excepturi odio obcaecati officia.</p>
-                </mat-expansion-panel>
-                <mat-expansion-panel style="background-color: transparent; box-shadow: none;" (opened)="panelOpenState = true"
-                                     (closed)="panelOpenState = false">
-                  <mat-expansion-panel-header>
-                    <mat-panel-title>
-                        Ofiice Furniture
-                    </mat-panel-title>
-                    <mat-panel-description>
-                    </mat-panel-description>
-                  </mat-expansion-panel-header>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia nihil facere at ipsum possimus harum quasi? Sit quaerat eaque deserunt. Nihil autem ad quia dolorum commodi. Excepturi odio obcaecati officia.</p>
-                </mat-expansion-panel>
-
-
-
-                <mat-expansion-panel style="background-color: transparent; box-shadow: none;" (opened)="panelOpenState = true"
-                                     (closed)="panelOpenState = false">
-                  <mat-expansion-panel-header>
-                    <mat-panel-title>
-                     Soft Seating
-                    </mat-panel-title>
-                    <mat-panel-description>
-                    </mat-panel-description>
-                  </mat-expansion-panel-header>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia nihil facere at ipsum possimus harum quasi? Sit quaerat eaque deserunt. Nihil autem ad quia dolorum commodi. Excepturi odio obcaecati officia.</p>
-                </mat-expansion-panel>
-
-
-                <mat-expansion-panel style="background-color: transparent; box-shadow: none;" (opened)="panelOpenState = true"
-                                     (closed)="panelOpenState = false">
-                  <mat-expansion-panel-header>
-
-                    <mat-panel-title>
-                      Lightning
-                    </mat-panel-title>
-                    <mat-panel-description>
-                    </mat-panel-description>
-                  </mat-expansion-panel-header>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia nihil facere at ipsum possimus harum quasi? Sit quaerat eaque deserunt. Nihil autem ad quia dolorum commodi. Excepturi odio obcaecati officia.</p>
-                </mat-expansion-panel>
-              </mat-accordion>
+            
         </div>
     </div>
     <div class="right-side">
         <div class="search-bar">
             <input type="search" placeholder="Search for product">
-            <button routerLink="/productDetails" type="submit">Search</button>
+            <div class="search-button">
+                <button routerLink="/productDetails" type="submit">Search</button>
+            </div>
         </div>
         <div class="products-main-page">
             <div class="container-chair">
